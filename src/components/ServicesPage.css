@@ -1,0 +1,48 @@
+.services-page{
+    padding: 2rem;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    justify-content: space-around;
+}
+
+.service{
+    box-shadow: 3px 3px 10px black;
+    padding: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 20%;
+}
+
+.type{
+    background-color: rgba(0, 0, 255, 0.75);
+    width: max-content;
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+.type:hover{
+    background-color: coral;
+    transition: 1s;
+}
+
+@media screen and (max-width: 774px){
+    .services{
+        flex-direction: column;
+    }
+
+    .service{
+        margin: 0 auto;
+        width: 80%;
+        border-radius: 1rem;
+    }
+
+    .type{
+        border-radius: 1rem;
+    }
+}

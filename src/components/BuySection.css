@@ -1,0 +1,173 @@
+.buy-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)), url('/public/images/nightcity2.jpg');
+    background-size: cover;
+}
+
+.buy-content{
+    padding: 2rem;
+}
+
+.buy-content h1{
+    margin-top: 0;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.buy-content h1 span{
+    color: coral;
+}
+
+.buy-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.property-information{
+    font-size: 1.5rem;
+    padding: 2rem;
+    width: 35%;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.property-display{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    font-size: 1.25rem;
+    padding: 2rem;
+}
+
+.property-card{
+    width: 20%;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1rem;
+    font-size: 1.25rem;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.property-card h2{
+    margin: 0;
+}
+
+.property-card h2 span{
+    font-weight: normal;
+    font-size: .75rem;
+    padding: .2rem;
+    background-color: goldenrod;
+}
+
+.property-card img{
+    width: 100%;
+}
+
+.property-card button{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: .5rem .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .buy-cards{
+        display: block;
+    }
+
+    .buy-content{
+        padding: 1rem;
+    }
+
+    .property-information{
+        width: 100%;
+        padding: 0;
+    }
+
+    .property-display{
+        padding: 0;
+    }
+
+    .property-card{
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .buy-cards{
+        display: block;
+    }
+
+    .property-information{
+        width: 100%;
+        padding: 0;
+    }
+
+    .property-display{
+        padding: 0;
+    }
+
+    .property-card{
+        width: 40%;
+        height: auto;
+    }
+
+    .property-display{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .buy-cards{
+        display: block;
+    }
+
+    .property-information{
+        width: 100%;
+        padding: 0;
+    }
+
+    .property-card{
+        width: 45%;
+        height: auto;
+    }
+
+    .property-display{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .buy-cards{
+        display: block;
+    }
+
+    .property-information{
+        width: 100%;
+        padding: 0;
+    }
+
+    .property-display{
+        padding: 0;
+    }
+
+    .property-card{
+        width: 40%;
+        height: auto;
+    }
+
+    .property-display{
+        padding: 0;
+    }
+}

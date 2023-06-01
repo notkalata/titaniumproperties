@@ -1,0 +1,220 @@
+.hero-section h1, .hero-section h2, .hero-section p{
+    margin: 0;
+}
+
+/* Top part */
+
+.title{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)), url('/public/images/nightcity.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+
+.title-text{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 5rem;
+    padding-top: 10rem;
+}
+
+.title-text button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    float: left;
+    padding: .5rem 1rem;
+    border: 2px solid white;
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.title-text button:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.title-text p, .title-text button{
+    margin-top: 2%;
+}
+
+/* End Top Part */
+
+/* About Brief */
+
+.about-brief{
+    padding: 2rem;
+}
+
+.about-brief h2{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.cards{
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    padding: 2rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    transition: 1s ease;
+}
+
+.card:hover{
+    background-color: rgba(173, 216, 230, 0.3);
+    transition: 1s ease;
+}
+
+.card img{
+    width: 100%;
+    height: 170px;
+}
+
+/* End About Brief */
+
+/* Gallery Brief */
+
+.gallery-brief{
+    padding: 2rem;
+}
+
+.gallery-brief h2{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.completed-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.completed{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.completed h3{
+    font-size: 1.25rem;
+}
+
+.completed i{
+    font-size: 4rem;
+}
+
+/* End Gallery Brief */
+
+/* Buy/Rent */
+
+.for-buy h2, .for-rent h2{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .cards{
+        gap: .5rem;
+    }
+
+    .card{
+        width: 43%;
+        height: auto;
+        font-size: 1.1rem;
+    }
+
+    .card img{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .cards{
+        gap: .5rem;
+    }
+
+    .card{
+        width: 40%;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .card img{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards{
+        gap: .5rem;
+    }
+
+    .card{
+        width: 40%;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .card img{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title-text{
+        padding: 10rem 1rem;
+        font-size: 2rem;
+    }
+
+    .title-text button{
+        font-size: 1.25rem;
+    }
+
+    .completed{
+        width: 30%;
+    }
+
+    .completed i{
+        font-size: 2.5rem;
+    }
+
+    .completed h3{
+        font-size: 1rem;
+    }
+
+    .carousel{
+        width: 100%;
+        height: 300px;
+    }
+
+    .carousel img{
+        border: none;
+    }
+
+    .about-brief, .gallery-brief{
+        padding: 1rem;
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+        font-size: 1.1rem;
+    }
+}

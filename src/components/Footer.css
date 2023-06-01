@@ -1,0 +1,96 @@
+.footer{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 1rem;
+}
+
+#subscribe, #note{
+    text-align: center;
+}
+
+#note{
+    color: coral;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.newsletter label, .newsletter input{
+    margin-right: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.newsletter input{
+    padding: .5rem 1rem;
+    width: 300px;
+}
+
+.newsletter button{
+    border: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: inherit;
+    color: white;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.newsletter button:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+.site-map{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.map-column a{
+    color: white;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media p i{
+    margin: 0 .1rem;
+}
+
+.social-media h1 i, .social-media p i:nth-child(2), .social-media p i:nth-child(4){
+    color: coral;
+}
+
+@media screen and (max-width: 500px){
+    .newsletter{
+        font-size: 1rem;
+    }
+
+    .map-column{
+        width: 30%;
+        font-size: 1rem;
+    }
+
+    .site-map{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .social-media p i{
+        font-size: 1.1rem;
+    }
+
+    .newsletter input{
+        width: auto;
+    }
+}
